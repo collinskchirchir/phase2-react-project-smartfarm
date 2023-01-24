@@ -1,0 +1,34 @@
+{
+  "farmers": [
+    {
+      "fname": "Collins ",
+      "lname": "K.",
+      "nat_id": "280796448",
+      "dob": "2004-12-08",
+      "crop_acre": "5",
+      "status": "registered",
+      "active": "true",
+      "id": 1
+    },
+    {
+      "fname": "Hillary",
+      "lname": "Clinton",
+      "nat_id": "7865499",
+      "dob": "2004-12-04",
+      "crop_acre": "6",
+      "status": "trained",
+      "active": "false",
+      "id": 2
+    },
+    {
+      "fname": "Whitney",
+      "lname": "Blue",
+      "nat_id": "5485864965",
+      "dob": "2004-12-04",
+      "crop_acre": "8",
+      "status": "certified",
+      "active": "true",
+      "id": 3
+    }
+  ]
+}
