@@ -95,7 +95,7 @@ function Form() {
                   </div>   
 
                   <div className="mt-3 d-flex justify-content-center">
-                    <button className="btn btn-primary" type="submit">Add Transaction</button>
+                    <button className="btn btn-primary" type="submit">Add Farmer</button>
                   </div>           
                   
 
