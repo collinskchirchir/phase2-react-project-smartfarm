@@ -5,7 +5,9 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Form from './components/Form';
+import Home from './components/Home';
 import FarmerList from './components/FarmerList';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   const [farmers, setFarmers] = useState([])
@@ -21,8 +23,11 @@ function App() {
     <>
       <Header />
       <Navbar/>
-      <Form  />
-      <FarmerList farmers={farmers} />
+      <Routes>
+        <Route exact path="/" element={<Home  />}></Route>
+        <Route path="/form" element={<Form  />}></Route>
+        <Route path="/register" element={<FarmerList farmers={farmers} />}></Route>
+      </Routes>
       <Footer />
     </>
   );
