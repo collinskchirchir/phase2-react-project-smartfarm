@@ -7,6 +7,7 @@
       "dob": "2004-12-08",
       "crop_acre": "5",
       "status": "registered",
+      "gender": "male",
       "active": "true",
       "id": 1
     },
@@ -17,6 +18,7 @@
       "dob": "2004-12-04",
       "crop_acre": "6",
       "status": "trained",
+      "gender": "male",
       "active": "false",
       "id": 2
     },
@@ -27,6 +29,7 @@
       "dob": "2004-12-04",
       "crop_acre": "8",
       "status": "certified",
+      "gender": "female",
       "active": "true",
       "id": 3
     }
