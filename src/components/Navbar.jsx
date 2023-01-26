@@ -9,13 +9,20 @@ function Navbar() {
                 </div>
                 <ul className="nav-items">
                     <li className="nav-item"> 
-                        <NavLink to='/'>Home</NavLink> 
+                        <NavLink to='/'>
+                          <span><i class="fa-solid fa-house me-2"></i></span>
+                          Home</NavLink> 
                     </li>
                     <li className="nav-item">
-                        <NavLink to='/form'>Add Farmer Form</NavLink>
+                      
+                        <NavLink to='/form'>
+                          <span><i class="fa-solid fa-user-plus me-2"></i></span>
+                          Add Farmer Form</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to="/register">Farmer Register</NavLink>
+                        <NavLink to="/register">
+                          <span><i class="fa-solid fa-list me-2"></i></span>
+                          Farmer Register</NavLink>
                     </li>                    
                 </ul>
                 <div className="nav-btns-con">

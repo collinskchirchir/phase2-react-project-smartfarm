@@ -15,7 +15,7 @@ function Farmer({ farmer }){
       <td>
         <div class="d-grid">
           <button className="btn btn-sm btn-danger">
-          <span><i class="fa-regular fa-trash-can"></i></span>                 
+          <span><i class="fa-regular fa-trash-can me-1"></i></span>                 
           Delete</button>
         </div>
       </td>
