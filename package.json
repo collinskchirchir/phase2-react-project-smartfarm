@@ -17,7 +17,8 @@
     "start": "json-server --watch data/db.json -p 8001 & open http://localhost:8001/farmers & react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "seed": "cp data/seeds.json data/db.json"
   },
   "eslintConfig": {
     "extends": [
