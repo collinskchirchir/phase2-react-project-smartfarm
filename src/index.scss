@@ -127,6 +127,12 @@ header {
       }
 }
 
+.headerBanner{
+  min-height: 100px;
+  background-image: url(./assets/photos/homepage-banner.png) no-repeat;
+  // background-size: contain;
+}
+
 /*------------------------------------
   Footer
 ------------------------------------*/

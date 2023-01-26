@@ -1,6 +1,9 @@
+import headerBanner from '../assets/photos/homepage-banner(700px).png';
 function Home(){
   return(
-    <h1>Home Page</h1>
+    <div className="headerBanner">
+      <img src={headerBanner} alt="HeaderBanner"></img>
+    </div>
   );
 }
 
