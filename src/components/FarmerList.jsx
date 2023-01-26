@@ -32,6 +32,7 @@ function FarmerList({farmers, onDeleteFarmer}){
                 <th>Status</th>
                 <th>Crop Acreage</th>
                 <th>Active</th>
+                <th>Edit</th>
                 <th>Delete</th>
               </tr>
             </thead>

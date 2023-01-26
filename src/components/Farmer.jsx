@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function Farmer({ farmer, onDeleteFarmer }){
   
   const {id, fname, lname, dob, gender, status, active, nat_id, crop_acre } = farmer;
@@ -20,6 +21,13 @@ function Farmer({ farmer, onDeleteFarmer }){
       <td>{status}</td>
       <td>{crop_acre}</td>
       <td>{active}</td>
+      <td>
+        <div class="d-grid">
+          <Link to={`/farmers/${id}`} className="btn btn-sm btn-secondary">
+          <span><i class="fa-regular fa-trash-can me-1"></i></span>                 
+          Details</Link>
+        </div>
+      </td>
       <td>
         <div class="d-grid">
           <button onClick={handleClickDelete} className="btn btn-sm btn-danger">

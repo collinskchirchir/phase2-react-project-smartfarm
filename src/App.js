@@ -6,6 +6,7 @@ import Form from './components/Form';
 import Home from './components/Home';
 import FarmerList from './components/FarmerList';
 import { Routes, Route } from 'react-router-dom';
+import FarmerDetail from './components/FarmerDetail';
 
 function App() {
   const [farmers, setFarmers] = useState([])
@@ -34,7 +35,8 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home  />}></Route>
         <Route path="/form" element={<Form onAddFarmer={handleAddFarmer} />}></Route>
-        <Route path="/register" element={<FarmerList farmers={farmers} onDeleteFarmer={handleDeleteFarmer}/>}></Route>
+        <Route exact path="/farmers" element={<FarmerList farmers={farmers} onDeleteFarmer={handleDeleteFarmer}/>}></Route>
+        <Route path="/farmers/:id" element={<FarmerDetail />}></Route>
       </Routes>
       <Footer />
     </>

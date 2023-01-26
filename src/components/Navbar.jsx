@@ -20,9 +20,9 @@ function Navbar() {
                           Add Farmer Form</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to="/register">
+                        <NavLink to="/farmers">
                           <span><i class="fa-solid fa-list me-2"></i></span>
-                          Farmer Register</NavLink>
+                          Farmers</NavLink>
                     </li>                    
                 </ul>
                 <div className="nav-btns-con">
