@@ -1,9 +1,7 @@
 import { useState, useEffect } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Navbar from './components/Navbar';
 import Form from './components/Form';
 import Home from './components/Home';
 import FarmerList from './components/FarmerList';
@@ -22,7 +20,7 @@ function App() {
   return (
     <>
       <Header />
-      <Navbar/>
+      {/* <Navbar/> */}
       <Routes>
         <Route exact path="/" element={<Home  />}></Route>
         <Route path="/form" element={<Form  />}></Route>

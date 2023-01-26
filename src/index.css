@@ -1,27 +1,132 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 @import "./css/bootstrap.css";
+:root {
+  --color-neutral: #f2f6ff;
+  --color-neutral-2: #fafaff;
+  --color-neutral-3: #f4f7f7;
+  --color-primary: #57AC49;
+  --color-secondary: #F8B63C;
+  --color-primary-dark: #005aff;
+  --color-white: #fff;
+  --color-dark: #272a33;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  font-weight: 500;
+  font-family: inherit;
+  font-size: inherit;
 }
 
-.navbar-brand-logo {
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/*------------------------------------
+  HeaderNavigation
+------------------------------------*/
+header {
+  background: var(--color-primary);
+  position: relative;
+}
+header .navigation {
+  display: grid;
+  grid-template-columns: 100px 1fr auto;
+  padding: 0.8rem 10rem;
+  -webkit-animation: navHide 1s ease-in-out;
+          animation: navHide 1s ease-in-out;
+}
+@-webkit-keyframes navHide {
+  0% {
+    transform: translateY(-100%) scaleY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes navHide {
+  0% {
+    transform: translateY(-100%) scaleY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+header .navigation .logo {
+  display: flex;
+  align-items: center;
+  -webkit-animation: navHide 1s ease-in-out;
+          animation: navHide 1s ease-in-out;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  visibility: hidden;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+header .navigation .logo img {
   width: 100%;
   min-width: 10rem;
   max-width: 10rem;
 }
-.navbar-collapse {
-  flex-basis: 100%;
-  flex-grow: 1;
+header .navigation .nav-items {
+  display: flex;
   align-items: center;
+  justify-content: flex-end;
+  margin-right: 4rem;
+  -webkit-animation: navHide 1s ease-in-out;
+          animation: navHide 1s ease-in-out;
+  -webkit-animation-delay: 0.38s;
+          animation-delay: 0.38s;
+  visibility: hidden;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
+header .navigation .nav-items .nav-item {
+  margin: 0 0.7rem;
+}
+header .navigation .nav-items .nav-item a {
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: 0.8rem;
+  position: relative;
+}
+header .navigation .nav-items .nav-item a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-secondary);
+  border-radius: 30px;
+  transform: scale(0);
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+}
+header .navigation .nav-items .nav-item a:hover::before {
+  transform: scale(1);
+}
+
 /*------------------------------------
   Footer
 ------------------------------------*/
@@ -32,3 +137,15 @@ code {
   right: 0;
   height: 3.5rem;
 }
+
+.navbar-brand-logo {
+  width: 100%;
+  min-width: 10rem;
+  max-width: 10rem;
+}
+
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+}/*# sourceMappingURL=index.css.map */
