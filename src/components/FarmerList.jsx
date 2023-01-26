@@ -1,14 +1,15 @@
 import React from "react";
 import Stats from "./Stats";
 import Farmer from "./Farmer";
-function FarmerList({farmers}){
+function FarmerList({farmers, onDeleteFarmer}){
   const farmerRows = farmers.map((farmer) => {
     
     return(
       <tr>
         <Farmer
           key={farmer.id}
-          farmer={farmer} 
+          farmer={farmer}
+          onDeleteFarmer={onDeleteFarmer} 
         />
       </tr>
     );

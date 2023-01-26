@@ -1,6 +1,14 @@
-function Farmer({ farmer }){
+function Farmer({ farmer, onDeleteFarmer }){
   
   const {id, fname, lname, dob, gender, status, active, nat_id, crop_acre } = farmer;
+
+  function handleClickDelete(){
+    fetch(`http://localhost:8001/farmers/${id}`, {
+      method: "DELETE"
+    })
+    .then(resp => resp.json())
+    .then(() => onDeleteFarmer(farmer))
+  }
   return(
     <>
       <td>{id}</td>
@@ -14,7 +22,7 @@ function Farmer({ farmer }){
       <td>{active}</td>
       <td>
         <div class="d-grid">
-          <button className="btn btn-sm btn-danger">
+          <button onClick={handleClickDelete} className="btn btn-sm btn-danger">
           <span><i class="fa-regular fa-trash-can me-1"></i></span>                 
           Delete</button>
         </div>
