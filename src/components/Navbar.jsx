@@ -8,19 +8,18 @@ function Navbar() {
                 <img src={whiteLogo}   alt=''></img>
                 </div>
                 <ul className="nav-items">
-                    <li className="nav-item">                        
-                        <a href="#" className='active-menu'>Home</a>
+                    <li className="nav-item"> 
+                        <NavLink to='/'>Home</NavLink> 
                     </li>
                     <li className="nav-item">
-                        <a href="#">Farmer Register</a>
+                        <NavLink to='/form'>Add Farmer Form</NavLink>
                     </li>
                     <li className="nav-item">
-                        <a href="#">Gallery</a>
-                    </li>
-                    
+                        <NavLink to="/register">Farmer Register</NavLink>
+                    </li>                    
                 </ul>
                 <div className="nav-btns-con">
-                <button className="btn btn-secondary btn-sm" type="submit">Contact Us</button>
+                  <button className="btn btn-secondary btn-sm" type="submit">CONTACT US</button>
                 </div>
             </nav>
   );
