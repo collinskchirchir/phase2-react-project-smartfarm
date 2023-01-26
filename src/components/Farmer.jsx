@@ -12,7 +12,13 @@ function Farmer({ farmer }){
       <td>{status}</td>
       <td>{crop_acre}</td>
       <td>{active}</td>
-      <td>DELETE</td>
+      <td>
+        <div class="d-grid">
+          <button className="btn btn-sm btn-danger">
+          <span><i class="fa-regular fa-trash-can"></i></span>                 
+          Delete</button>
+        </div>
+      </td>
     </>
   );
 }

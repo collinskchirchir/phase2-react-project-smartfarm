@@ -16,10 +16,10 @@ function FarmerList({farmers}){
   return(
     <div class="content container">
       <Stats />
-      <div className="card">
+      <div className="card container-fluid">
     
           
-          <table class="table table-light table-striped table-hover">
+          <table class="table table-light table-striped table-hover mt-4">
             <thead class="table-dark">
               <tr class="table-secondary">
               <th>Farmer ID</th>

@@ -1,6 +1,6 @@
 function Stats(){
   return(
-    <h1>Statistics</h1>
+    <h1><i class="fa-regular fa-stars"></i>Statistics</h1>
   );
 }
 
