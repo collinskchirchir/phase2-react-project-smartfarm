@@ -9,7 +9,10 @@
   --color-secondary: #F8B63C;
   --color-primary-dark: #005aff;
   --color-white: #fff;
-  --color-dark: #272a33;
+  --color-text-heading: #254C50;
+  --color-text-body: #102123;
+  --color-light: #D4E8D0;
+  --color-dark: #102123;
 }
 
 *{
@@ -90,7 +93,8 @@ header {
             .nav-item{
                 margin: 0 .7rem;
                 a{
-                    text-transform: uppercase;
+                    color: white;
+                    text-decoration: none;
                     font-size: 1rem;
                     padding: .8rem;
                     position: relative;
@@ -102,7 +106,7 @@ header {
                         width: 100%;
                         height: 100%;
                         background: var(--color-secondary);
-                        border-radius: 30px;
+                        border-radius: 15px;
                         transform: scale(0);
                         transition: all .4s ease-in-out;
                         z-index: -1;
@@ -111,8 +115,13 @@ header {
                         &::before{
                             transform: scale(1);
                         }
-                    }
-                }
+                    }                    
+                  }
+                  .active{
+                    color: var(--color-text-body);
+                    border-radius: 10px;
+                    background: var(--color-secondary);
+                  }
             }
         }
       }
