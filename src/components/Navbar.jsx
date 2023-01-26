@@ -19,7 +19,7 @@ function Navbar() {
                     </li>                    
                 </ul>
                 <div className="nav-btns-con">
-                  <button className="btn btn-secondary btn-sm" type="submit">CONTACT US</button>
+                  <button className="btn btn-outline-light " type="submit">CONTACT US</button>
                 </div>
             </nav>
   );
