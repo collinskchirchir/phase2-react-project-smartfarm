@@ -7,11 +7,12 @@ function Farmer({ farmer }){
       <td>{fname}</td>
       <td>{lname}</td>
       <td>{nat_id}</td>
-      <td>{dob}</td>
       <td>{gender}</td>
+      <td>{dob}</td>
       <td>{status}</td>
       <td>{crop_acre}</td>
       <td>{active}</td>
+      <td>DELETE</td>
     </>
   );
 }

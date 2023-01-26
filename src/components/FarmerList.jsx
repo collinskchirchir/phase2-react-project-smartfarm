@@ -18,10 +18,11 @@ function FarmerList({farmers}){
       <Stats />
       <div className="card">
     
-          <table >
-            <thead class="thead-light">
-              <tr>                
-                <th>Farmer ID</th>
+          
+          <table class="table table-light table-striped table-hover">
+            <thead class="table-dark">
+              <tr class="table-secondary">
+              <th>Farmer ID</th>
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>National ID</th>
@@ -33,10 +34,8 @@ function FarmerList({farmers}){
                 <th>Delete</th>
               </tr>
             </thead>
-              
             <tbody>
-             {farmerRows}           
-              
+              {farmerRows}       
             </tbody>
           </table>
         
