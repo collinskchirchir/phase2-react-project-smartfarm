@@ -17,13 +17,18 @@ function App() {
     .then(data => setFarmers(data))
   }, [])
 
+  function handleAddFarmer(farmer){
+    const updatedFarmers = [...farmers, farmer];
+    setFarmers(updatedFarmers)
+  }
+
   return (
     <>
       <Header />
       {/* <Navbar/> */}
       <Routes>
         <Route exact path="/" element={<Home  />}></Route>
-        <Route path="/form" element={<Form  />}></Route>
+        <Route path="/form" element={<Form onAddFarmer={handleAddFarmer} />}></Route>
         <Route path="/register" element={<FarmerList farmers={farmers} />}></Route>
       </Routes>
       <Footer />

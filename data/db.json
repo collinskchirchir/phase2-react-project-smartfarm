@@ -32,6 +32,39 @@
       "gender": "female",
       "active": "true",
       "id": 3
+    },
+    {
+      "fname": "Justus",
+      "lname": "Machuki",
+      "nat_id": "35042156",
+      "dob": "2023-01-08",
+      "crop_acre": "6",
+      "gender": "male",
+      "active": "true",
+      "status": "true",
+      "id": 4
+    },
+    {
+      "fname": "Evans",
+      "lname": "Kiviasi",
+      "nat_id": "45213548",
+      "dob": "2023-01-25",
+      "crop_acre": "18",
+      "gender": "male",
+      "active": "true",
+      "status": "true",
+      "id": 5
+    },
+    {
+      "fname": "Evans",
+      "lname": "Kiviasi",
+      "nat_id": "45213548",
+      "dob": "2023-01-25",
+      "crop_acre": "18",
+      "gender": "male",
+      "active": "true",
+      "status": "true",
+      "id": 6
     }
   ]
 }
