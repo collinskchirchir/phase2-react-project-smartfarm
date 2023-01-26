@@ -60,6 +60,11 @@ const FarmerDetail = ({onDeleteFarmer, onUpdateFarmer}) => {
       navigate('/farmers');
       onUpdateFarmer(updatedItem)})
     }
+
+    const btnTextObj = {
+      trained: "TRAIN",
+      certified: "CERTIFY"
+    }
     
   return (
     <>
@@ -77,7 +82,7 @@ const FarmerDetail = ({onDeleteFarmer, onUpdateFarmer}) => {
         </ul>
         <Link class="btn btn-dark me-4" to="/farmers">Back</Link>
         <button onClick={handleClickDelete} class="btn btn-danger me-4">Delete Farmer</button>
-        {status !== "certified" &&  <button onClick={handleClickUpdate} class="btn btn-primary">{valueOnUpdate}</button>}
+        {status !== "certified" &&  <button onClick={handleClickUpdate} class="btn btn-primary">{btnTextObj[valueOnUpdate]}</button>}
       </div>
     </div>
   </>
