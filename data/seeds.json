@@ -54,6 +54,39 @@
       "active": "true",
       "status": "registered",
       "id": 7
+    },
+    {
+      "fname": "Arnold",
+      "lname": "Muhahi",
+      "nat_id": "45213658",
+      "dob": "2023-01-06",
+      "crop_acre": "7",
+      "gender": "male",
+      "active": "true",
+      "status": "registered",
+      "id": 8
+    },
+    {
+      "fname": "Donald ",
+      "lname": "Jump",
+      "nat_id": "45824535",
+      "dob": "2023-01-22",
+      "crop_acre": "14",
+      "gender": "male",
+      "active": "true",
+      "status": "registered",
+      "id": 9
+    },
+    {
+      "fname": "Elektra",
+      "lname": "Njeri",
+      "nat_id": "14512546",
+      "dob": "2023-01-12",
+      "crop_acre": "20",
+      "gender": "female",
+      "active": "true",
+      "status": "registered",
+      "id": 10
     }
   ]
 }

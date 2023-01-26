@@ -27,6 +27,17 @@ function App() {
     const updatedFarmers = farmers.filter((farmer) => farmer.id !== deletedFarmer.id)
     setFarmers(updatedFarmers)
   }
+  function handleUpdateFarmer(updatedFarmer){
+    const updatedFarmers = farmers.map((farmer) => {
+      if(farmer.id === updatedFarmer.id){
+        return updatedFarmer;
+      }
+      else{
+        return farmer
+      }
+    });
+    setFarmers(updatedFarmers)
+  }
 
   return (
     <>
@@ -36,7 +47,7 @@ function App() {
         <Route exact path="/" element={<Home  />}></Route>
         <Route path="/form" element={<Form onAddFarmer={handleAddFarmer} />}></Route>
         <Route exact path="/farmers" element={<FarmerList farmers={farmers} onDeleteFarmer={handleDeleteFarmer}/>}></Route>
-        <Route path="/farmers/:id" element={<FarmerDetail onDeleteFarmer={handleDeleteFarmer}/>}></Route>
+        <Route path="/farmers/:id" element={<FarmerDetail onDeleteFarmer={handleDeleteFarmer} onUpdateFarmer={handleUpdateFarmer}/>}></Route>
       </Routes>
       <Footer />
     </>
