@@ -140,7 +140,7 @@ function Form({ onAddFarmer }) {
                         {/* <!-- Radio Check --> */}
                         <label class="form-control" for="active">
                           <span class="form-check">
-                            <input type="radio" class="form-check-input" name="status" onChange={handleChange} id="status" value='true'></input>
+                            <input type="radio" class="form-check-input" name="status" onChange={handleChange} id="active" value='true'></input>
                             <span class="form-check-label">Active</span>
                           </span>
                         </label>
@@ -149,7 +149,7 @@ function Form({ onAddFarmer }) {
                         {/* <!-- Radio Check --> */}
                         <label class="form-control" for="dormant">
                           <span class="form-check">
-                            <input type="radio" class="form-check-input" name="status" onChange={handleChange} id="false"></input>
+                            <input type="radio" class="form-check-input" name="status" onChange={handleChange} id="active" value='false'></input>
                             <span class="form-check-label">Dormant</span>
                           </span>
                         </label>

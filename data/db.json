@@ -41,7 +41,7 @@
       "crop_acre": "6",
       "gender": "male",
       "active": "true",
-      "status": "true",
+      "status": "trained",
       "id": 4
     },
     {
@@ -52,7 +52,7 @@
       "crop_acre": "18",
       "gender": "male",
       "active": "true",
-      "status": "true",
+      "status": "registered",
       "id": 5
     },
     {
@@ -63,8 +63,19 @@
       "crop_acre": "18",
       "gender": "male",
       "active": "true",
-      "status": "true",
+      "status": "registered",
       "id": 6
+    },
+    {
+      "fname": "Josphine",
+      "lname": "Kalute",
+      "nat_id": "25345625",
+      "dob": "2023-01-28",
+      "crop_acre": "12",
+      "gender": "female",
+      "active": "true",
+      "status": "registered",
+      "id": 7
     }
   ]
 }
