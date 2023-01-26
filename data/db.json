@@ -1,17 +1,6 @@
 {
   "farmers": [
     {
-      "fname": "Collins ",
-      "lname": "K.",
-      "nat_id": "280796448",
-      "dob": "2004-12-08",
-      "crop_acre": "5",
-      "status": "registered",
-      "gender": "male",
-      "active": "true",
-      "id": 1
-    },
-    {
       "fname": "Hillary",
       "lname": "Clinton",
       "nat_id": "7865499",
@@ -32,28 +21,6 @@
       "gender": "female",
       "active": "true",
       "id": 3
-    },
-    {
-      "fname": "Evans",
-      "lname": "Kiviasi",
-      "nat_id": "45213548",
-      "dob": "2023-01-25",
-      "crop_acre": "18",
-      "gender": "male",
-      "active": "true",
-      "status": "registered",
-      "id": 6
-    },
-    {
-      "fname": "Josphine",
-      "lname": "Kalute",
-      "nat_id": "25345625",
-      "dob": "2023-01-28",
-      "crop_acre": "12",
-      "gender": "female",
-      "active": "true",
-      "status": "registered",
-      "id": 7
     }
   ]
 }

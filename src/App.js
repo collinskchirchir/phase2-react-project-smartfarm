@@ -36,7 +36,7 @@ function App() {
         <Route exact path="/" element={<Home  />}></Route>
         <Route path="/form" element={<Form onAddFarmer={handleAddFarmer} />}></Route>
         <Route exact path="/farmers" element={<FarmerList farmers={farmers} onDeleteFarmer={handleDeleteFarmer}/>}></Route>
-        <Route path="/farmers/:id" element={<FarmerDetail />}></Route>
+        <Route path="/farmers/:id" element={<FarmerDetail onDeleteFarmer={handleDeleteFarmer}/>}></Route>
       </Routes>
       <Footer />
     </>

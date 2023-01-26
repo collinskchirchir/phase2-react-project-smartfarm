@@ -1,4 +1,6 @@
 import { useState } from "react";
+import {  useNavigate } from 'react-router-dom'
+
 function Form({ onAddFarmer }) {
   const [formData, setFormData] = useState({
     fname: "",
@@ -10,6 +12,8 @@ function Form({ onAddFarmer }) {
     active: "true",
     status: "registered"
   })
+
+  const navigate = useNavigate()
 
   function handleChange(e){
     setFormData({
@@ -39,7 +43,11 @@ function Form({ onAddFarmer }) {
       body: JSON.stringify(farmerObj)
     })
       .then(resp => resp.json())
-      .then(data => onAddFarmer(data)) 
+      .then(data => {
+        // redirect to projects page
+        navigate("/farmers")
+        onAddFarmer(data)
+      }) 
 
     // reset form data
     // setFormData({
