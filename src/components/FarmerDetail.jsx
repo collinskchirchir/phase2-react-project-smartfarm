@@ -62,7 +62,7 @@ const FarmerDetail = ({onDeleteFarmer, onUpdateFarmer}) => {
     }
 
     const btnTextObj = {
-      trained: "TRAIN",
+      trained: 'TRAIN',
       certified: "CERTIFY"
     }
     
@@ -80,9 +80,9 @@ const FarmerDetail = ({onDeleteFarmer, onUpdateFarmer}) => {
           <li class="list-group-item">Farm Size(acre): {crop_acre}</li>
           <li class="list-group-item">Active: {active}</li>
         </ul>
-        <Link class="btn btn-dark me-4" to="/farmers">Back</Link>
-        <button onClick={handleClickDelete} class="btn btn-danger me-4">Delete Farmer</button>
-        {status !== "certified" &&  <button onClick={handleClickUpdate} class="btn btn-primary">{btnTextObj[valueOnUpdate]}</button>}
+        <Link class="btn btn-dark me-4" to="/farmers"><span><i class="fa-solid fa-left-to-line me-2"></i></span>Back</Link>
+        <button onClick={handleClickDelete} class="btn btn-danger me-4"><span><i class="fa-solid fa-trash-can-xmark me-2"></i></span>Delete Farmer</button>
+        {status !== "certified" &&  <button onClick={handleClickUpdate} class="btn btn-primary"><span><i class="fa-solid fa-screen-users me-2"></i></span>{btnTextObj[valueOnUpdate]}</button>}
       </div>
     </div>
   </>

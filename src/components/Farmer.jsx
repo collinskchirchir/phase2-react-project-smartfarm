@@ -24,7 +24,7 @@ function Farmer({ farmer, onDeleteFarmer }){
       <td>
         <div class="d-grid">
           <Link to={`/farmers/${id}`} className="btn btn-sm btn-secondary">
-          <span><i class="fa-regular fa-trash-can me-1"></i></span>                 
+          <span><i class="fa-regular fa-pen-to-square me-1"></i></span>                 
           Details</Link>
         </div>
       </td>
