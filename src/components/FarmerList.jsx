@@ -1,8 +1,16 @@
 import React from "react";
 import Stats from "./Stats";
 import Farmer from "./Farmer";
-function FarmerList({farmers, onDeleteFarmer}){
-  const farmerRows = farmers.map((farmer) => {
+import SearchBar from "./SearchBar";
+function FarmerList({farmers, onDeleteFarmer, onSearch, search}){
+  const filteredFarmers = farmers.filter(
+    farmer => 
+      farmer.fname.includes(search) ||
+      farmer.lname.includes(search) ||
+      farmer.status.includes(search) ||
+      farmer.nat_id.includes(search)            
+      )
+  const farmerRows = filteredFarmers.map((farmer) => {
     
     return(
       <tr>
@@ -19,7 +27,7 @@ function FarmerList({farmers, onDeleteFarmer}){
       <Stats />
       <div className="card container-fluid">
     
-          
+        <SearchBar onSearch={onSearch}/>
           <table class="table table-light table-striped table-hover mt-4">
             <thead class="table-dark">
               <tr class="table-secondary">

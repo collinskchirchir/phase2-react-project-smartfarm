@@ -9,7 +9,8 @@ import { Routes, Route } from 'react-router-dom';
 import FarmerDetail from './components/FarmerDetail';
 
 function App() {
-  const [farmers, setFarmers] = useState([])
+  const [farmers, setFarmers] = useState([]);
+  const [search, setSearch] = useState("");
 
   // fetch all Farmers
   useEffect(() => {
@@ -39,6 +40,11 @@ function App() {
     setFarmers(updatedFarmers)
   }
 
+  function handleSearch(newSearch){
+    setSearch(newSearch)
+  }
+
+
   return (
     <>
       <Header />
@@ -46,7 +52,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home  />}></Route>
         <Route path="/form" element={<Form onAddFarmer={handleAddFarmer} />}></Route>
-        <Route exact path="/farmers" element={<FarmerList farmers={farmers} onDeleteFarmer={handleDeleteFarmer}/>}></Route>
+        <Route exact path="/farmers" element={<FarmerList farmers={farmers} onDeleteFarmer={handleDeleteFarmer} onSearch={handleSearch} search={search}/>}></Route>
         <Route path="/farmers/:id" element={<FarmerDetail onDeleteFarmer={handleDeleteFarmer} onUpdateFarmer={handleUpdateFarmer}/>}></Route>
       </Routes>
       <Footer />
