@@ -8,6 +8,8 @@ function FarmerList({farmers, onDeleteFarmer, onSearch, search}){
       farmer.fname.includes(search) ||
       farmer.lname.includes(search) ||
       farmer.status.includes(search) ||
+      farmer.gender.includes(search) ||
+      farmer.active.includes(search) ||
       farmer.nat_id.includes(search)            
       )
   const farmerRows = filteredFarmers.map((farmer) => {
