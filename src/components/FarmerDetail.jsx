@@ -40,7 +40,7 @@ const FarmerDetail = ({onDeleteFarmer, onUpdateFarmer}) => {
       nextStep = "Farmer is ready for certification"
     }
     else{
-      nextStep = "Farmer has TRAINED AND CERTIFIED!"
+      nextStep = "FARMER IS TRAINED AND CERTIFIED!!!"
     }
     
 

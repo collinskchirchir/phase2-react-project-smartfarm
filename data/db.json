@@ -1,17 +1,6 @@
 {
   "farmers": [
     {
-      "fname": "Collins ",
-      "lname": "K.",
-      "nat_id": "280796448",
-      "dob": "2004-12-08",
-      "crop_acre": "5",
-      "status": "registered",
-      "gender": "male",
-      "active": "true",
-      "id": 1
-    },
-    {
       "fname": "Hillary",
       "lname": "Clinton",
       "nat_id": "7865499",
@@ -23,17 +12,6 @@
       "id": 2
     },
     {
-      "fname": "Whitney",
-      "lname": "Blue",
-      "nat_id": "5485864965",
-      "dob": "2004-12-04",
-      "crop_acre": "8",
-      "status": "certified",
-      "gender": "female",
-      "active": "true",
-      "id": 3
-    },
-    {
       "fname": "Evans",
       "lname": "Kiviasi",
       "nat_id": "45213548",
@@ -41,19 +19,8 @@
       "crop_acre": "18",
       "gender": "male",
       "active": "true",
-      "status": "registered",
+      "status": "trained",
       "id": 6
-    },
-    {
-      "fname": "Josphine",
-      "lname": "Kalute",
-      "nat_id": "25345625",
-      "dob": "2023-01-28",
-      "crop_acre": "12",
-      "gender": "female",
-      "active": "true",
-      "status": "certified",
-      "id": 7
     },
     {
       "fname": "Arnold",
@@ -63,19 +30,8 @@
       "crop_acre": "7",
       "gender": "male",
       "active": "true",
-      "status": "registered",
+      "status": "certified",
       "id": 8
-    },
-    {
-      "fname": "Donald ",
-      "lname": "Jump",
-      "nat_id": "45824535",
-      "dob": "2023-01-22",
-      "crop_acre": "14",
-      "gender": "male",
-      "active": "true",
-      "status": "registered",
-      "id": 9
     },
     {
       "fname": "Elektra",
@@ -85,8 +41,19 @@
       "crop_acre": "20",
       "gender": "female",
       "active": "true",
-      "status": "registered",
+      "status": "certified",
       "id": 10
+    },
+    {
+      "fname": "Jonathan ",
+      "lname": "Gitau",
+      "nat_id": "15452654",
+      "dob": "2023-01-14",
+      "crop_acre": "10",
+      "gender": "male",
+      "active": "true",
+      "status": "registered",
+      "id": 11
     }
   ]
 }

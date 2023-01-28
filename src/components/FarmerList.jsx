@@ -26,7 +26,7 @@ function FarmerList({farmers, onDeleteFarmer, onSearch, search}){
   })
   return(
     <div class="content container">
-      <Stats />
+      <Stats farmers={farmers}/>
       <div className="card container-fluid">
     
         <SearchBar onSearch={onSearch}/>
