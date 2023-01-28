@@ -13,7 +13,13 @@ function Form({ onAddFarmer }) {
     status: "registered"
   })
 
+  let maxDate = new Date();
+  let dd = String(maxDate.getDate()).padStart(2, '0');
+  let mm = String(maxDate.getMonth() + 1).padStart(2, '0'); //January is 0!
+  let yyyy = maxDate.getFullYear()-18;
   
+  maxDate = yyyy + '-' + mm + '-' + dd;
+  // console.log(maxDate); 
 
   const navigate = useNavigate()
 
@@ -94,7 +100,7 @@ function Form({ onAddFarmer }) {
                     <label for="emailLabel" class="col-sm-3 col-form-label form-label">Date of Birth</label>
 
                     <div class="col-sm-9">
-                      <input type="date" class="form-control" onChange={handleChange} name="email" id="dob" max="2005-02-01"></input>
+                      <input type="date" class="form-control" onChange={handleChange} name="email" id="dob" max={maxDate} required></input>
                     </div>
                   </div>
 
@@ -106,7 +112,7 @@ function Form({ onAddFarmer }) {
                         {/* <!-- Radio Check --> */}
                         <label class="form-control" for="male">
                           <span class="form-check">
-                            <input type="radio" class="form-check-input" name="gender" id="gender" onChange={handleChange} value="male"></input>
+                            <input type="radio" class="form-check-input" name="gender" id="gender" onChange={handleChange} value="male" required></input>
                             <span class="form-check-label">Male</span>
                           </span>
                         </label>
@@ -140,7 +146,7 @@ function Form({ onAddFarmer }) {
                         {/* <!-- Radio Check --> */}
                         <label class="form-control" for="active">
                           <span class="form-check">
-                            <input type="radio" class="form-check-input" name="status" onChange={handleChange} id="active" value='true'></input>
+                            <input type="radio" class="form-check-input" name="status" onChange={handleChange} id="active" value='true' required></input>
                             <span class="form-check-label">Active</span>
                           </span>
                         </label>
