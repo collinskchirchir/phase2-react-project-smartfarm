@@ -13,6 +13,8 @@ function Form({ onAddFarmer }) {
     status: "registered"
   })
 
+  
+
   const navigate = useNavigate()
 
   function handleChange(e){
@@ -49,17 +51,7 @@ function Form({ onAddFarmer }) {
         onAddFarmer(data)
       }) 
 
-    // reset form data
-    // setFormData({
-    //   fname: "",
-    //   lname: "",
-    //   nat_id: "",
-    //   dob: "",
-    //   crop_acre: 0,
-    //   gender: "",
-    //   active: "",
-    //   status: ""
-    // })
+    
 
   }
 
@@ -102,7 +94,7 @@ function Form({ onAddFarmer }) {
                     <label for="emailLabel" class="col-sm-3 col-form-label form-label">Date of Birth</label>
 
                     <div class="col-sm-9">
-                      <input type="date" class="form-control" onChange={handleChange} name="email" id="dob" ></input>
+                      <input type="date" class="form-control" onChange={handleChange} name="email" id="dob" max="2005-02-01"></input>
                     </div>
                   </div>
 

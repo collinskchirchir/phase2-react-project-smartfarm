@@ -70,7 +70,7 @@ function Stats({farmers}){
             <div class="card-body">
               {/* <!--begin::Fa icon duotone--> */}
               <span class=" me-2 text-success fa-xl">
-                <i class="fa-duotone fa-people-group"></i>              
+              <i class="fa-duotone fa-screen-users"></i>             
               </span>
               {/* <!--end::Fa Icon--> */}
               <div class="text-gray-900 fw-bolder fs-2 mb-2 mt-3" id="no-of-aFarmers">{trainedFarmers}</div>
@@ -87,7 +87,7 @@ function Stats({farmers}){
             <div class="card-body">
               {/* <!--begin::Fa icon duotone--> */}
               <span class=" me-2 text-success fa-xl">
-                <i class="fa-duotone fa-wheat-awn"></i>             
+                <i class="fa-duotone fa-file-certificate"></i>             
               </span>  
               {/* <!--end::Fa Icon--> */}
               <div class="text-gray-900 fw-bolder fs-2 mb-2 mt-3" id="total-prod-area">{certifiedFarmers}</div>
