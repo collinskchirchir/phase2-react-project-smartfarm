@@ -54,6 +54,17 @@
       "active": "true",
       "status": "registered",
       "id": 11
+    },
+    {
+      "fname": "Diana",
+      "lname": "Scott",
+      "nat_id": "45215462",
+      "dob": "2005-01-22",
+      "crop_acre": "5",
+      "gender": "female",
+      "active": "false",
+      "status": "trained",
+      "id": 12
     }
   ]
 }
