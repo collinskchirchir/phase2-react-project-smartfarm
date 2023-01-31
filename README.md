@@ -7,6 +7,9 @@
 #### 27/01/2023
 #### By Collins Chirchir 
 
+## Live Link to Site
+  - [https://smartfarm-phase2-project.web.app/](https://smartfarm-phase2-project.web.app/)
+
 ## Project Description
   SmartFarm is an application that enables agricultural industries to transition to digital registration process of smallholder farmers and provide a platform for training them.The application relies on form validation techniques for inputing data, performs DOM manipulation using ReactJs and fetches data from JSON server.
 
@@ -68,8 +71,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-## Live Link to Site
-  - [http://localhost:3000](http://localhost:3000)
+
 
 ## Support/Contact Details
   - collinskchirchir@gmail.com
